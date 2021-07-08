@@ -31,6 +31,13 @@ Extract Features
 - For global features, we use I3D pre-trained on Kinetics. Please cite this [Link](https://github.com/Tushar-N/pytorch-resnet3d).
 
 
+We uploaded our extracted features on google drive:
+ * [`res152_avgpool.hdf5`][2]: appearance global features (3GB).
+ * [`tgif_btup_f_obj10.hdf5`][3]: appearance local features (3GB).
+ * [`tgif_i3d_hw7_perclip_avgpool.hdf5`][4]: motion global features (3GB).
+ * [`tgif_i3d_roialign_hw7_perclip_avgpool.hdf5`][5]: motion local features (3GB).
+
+
 Training
 --------
 Simple run
@@ -79,3 +86,7 @@ Acknowledgements
  
  
  [1]: https://arxiv.org/abs/2106.10446
+ [2]: https://drive.google.com/file/d/1tWY3gU4XohzhZjV5Wia5L8XqfaV10127/view?usp=sharing
+ [3]: https://drive.google.com/file/d/1rxLL6eqi3d9FXKq7e4Wx7jiisu7_gzJa/view?usp=sharing
+ [4]: https://drive.google.com/file/d/1ejP_V3CuJFB_jaUYf-OM9up5bsnnETP3/view?usp=sharing
+ [5]: https://drive.google.com/file/d/1JbHWs0yTExL7Lc_abCvaXX49IsazUVvw/view?usp=sharing
