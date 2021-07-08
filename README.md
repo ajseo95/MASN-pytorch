@@ -34,9 +34,9 @@ Extract Features
 
 We uploaded our extracted features on google drive:
  * [`res152_avgpool.hdf5`][2]: appearance global features (3GB).
- * [`tgif_btup_f_obj10.hdf5`][3]: appearance local features (3GB).
+ * [`tgif_btup_f_obj10.hdf5`][3]: appearance local features (30GB).
  * [`tgif_i3d_hw7_perclip_avgpool.hdf5`][4]: motion global features (3GB).
- * [`tgif_i3d_roialign_hw7_perclip_avgpool.hdf5`][5]: motion local features (3GB).
+ * [`tgif_i3d_roialign_hw7_perclip_avgpool.hdf5`][5]: motion local features (59GB).
 
 
 Training
