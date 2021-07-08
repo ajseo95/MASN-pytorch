@@ -24,6 +24,7 @@ Extract Features
 --------
 1. Appearance Features
 - For local features, we used the Faster-RCNN pre-trained with Visual Genome. Please cite this [Link](https://github.com/peteanderson80/bottom-up-attention).
+  * After you extracted object features by Faster-RCNN, you can convert them to hdf5 file with simple run: `python adaptive_detection_features_converter.py`
 - For global features, we used ResNet152 provided by torchvision. Please cite this [Link](https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py).
 
 2. Motion Features
