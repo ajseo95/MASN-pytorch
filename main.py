@@ -399,7 +399,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--model_name', type=str, default='[MASN]')
-
+    
     ################ path config ################
     parser.add_argument('--feat_dir', default='/data/TGIFQA', help='path for resnet and i3d features')
     parser.add_argument('--vc_dir', default='/data/TGIFQA/vocab', help='path for vocabulary')
