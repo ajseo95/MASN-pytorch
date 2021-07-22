@@ -46,6 +46,16 @@ Simple run
 CUDA_VISIBLE_DEVICES=0 python main.py --task Count --batch_size 32
 ```
 
+For MSRVTT-QA, run
+```sh
+CUDA_VISIBLE_DEVICES=0 python main_msrvtt.py --task MS-QA --batch_size 32
+```
+
+For MSVD-QA, run
+```sh
+CUDA_VISIBLE_DEVICES=0 python main_msvd.py --task MS-QA --batch_size 32
+```
+
 ### Saving model checkpoints  
 By default, our model save model checkpoints at every epoch. You can change the path for saving models by `--save_path` options.
 Each checkpoint's name is '[TASK]_[PERFORMANCE].pth' in default.
@@ -64,6 +74,12 @@ Performance on TGIF-QA dataset:
 MASN | 3.75 | 84.4 | 87.4 |  59.5|
 
 You can download our pre-trained model by this link : [`Count`][6], [`Action`][7], [`Trans.`][8], [`FrameQA`][9]
+
+Performance on MSRVTT-QA and MSVD-QA dataset:
+Model  |  MSRVTT-QA   |  MSVD-QA   |
+ ------- | ------ | ------ |
+MASN | 35.2 | 38.0 |
+
 
 Citation
 --------
