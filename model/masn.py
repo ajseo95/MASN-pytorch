@@ -124,6 +124,8 @@ class MASN(nn.Module):
             return self.forward_frameqa(*args)
         elif task == 'Action' or task == 'Trans':
             return self.forward_trans_or_action(*args)
+        elif task == 'MS-QA':
+            return self.forward_msqa(*args)
 
     def model_block(self, res_avg_inp, i3d_avg_inp, res_obj_inp, bbox_inp, i3d_obj_inp,
                     video_length, all_sen_inputs, all_ques_length):
@@ -153,7 +155,6 @@ class MASN(nn.Module):
         motion_local = self.motion_local_proj(torch.cat([i3d_obj_inp, bbox_inp, pos_inp], dim=3))  # b, v_len, N, d
 
         v_len = appr_local.size(1)
-
         appr_local = appr_local.contiguous().view(bsz*v_len, obj_num, self.hidden_size)
         motion_local = motion_local.contiguous().view(bsz*v_len, obj_num, self.hidden_size)
 
@@ -247,3 +248,17 @@ class MASN(nn.Module):
 
         # answers of shape (batch_size, )
         return all_out, predictions, answers
+
+    def forward_msqa(
+            self, res_avg_inp, i3d_avg_inp, res_obj_inp, bbox_inp, i3d_obj_inp, video_length,
+            all_sen_inputs, all_ques_length, answers):
+        # out of shape (batch_size, num_class)
+        out = self.model_block(
+            res_avg_inp, i3d_avg_inp, res_obj_inp, bbox_inp, i3d_obj_inp, video_length,
+            all_sen_inputs, all_ques_length)
+
+        _, max_idx = torch.max(out, 1)
+        # (batch_size, ), dtype is long
+        predictions = max_idx
+        # answers of shape (batch_size, )
+        return out, predictions, answers

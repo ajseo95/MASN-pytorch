@@ -409,7 +409,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--checkpoint',
         type=str,
-        default='Action_84.38.pth',
+        default='FrameQA_59.73.pth',
         help='path to checkpoint')
     parser.add_argument(
         '--save_path',
