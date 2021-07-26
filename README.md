@@ -33,10 +33,23 @@ Extract Features
 
 
 We uploaded our extracted features:
+1) TGIF-QA
  * [`res152_avgpool.hdf5`][2]: appearance global features (3GB).
  * [`tgif_btup_f_obj10.hdf5`][3]: appearance local features (30GB).
  * [`tgif_i3d_hw7_perclip_avgpool.hdf5`][4]: motion global features (3GB).
  * [`tgif_i3d_roialign_hw7_perclip_avgpool.hdf5`][5]: motion local features (59GB).
+
+2) MSRVTT-QA
+ * [`msrvtt_res152_avgpool.hdf5`][10]: appearance global features (1.7GB).
+ * [`msrvtt_btup_f_obj10.hdf5`][11]: appearance local features (17GB).
+ * [`msrvtt_i3d_avgpool_perclip.hdf5`][12]: motion global features (1.7GB).
+ * [`msrvtt_i3d_roialign_perclip_obj10.hdf5`][13]: motion local features (34GB).
+
+3) MSVD-QA
+ * [`msvd_res152_avgpool.hdf5`][14]: appearance global features (220MB).
+ * [`msvd_btup_f_obj10.hdf5`][15]: appearance local features (2.2GB).
+ * [`msvd_i3d_avgpool_perclip.hdf5`][16]: motion global features (220MB).
+ * [`msvd_i3d_roialign_perclip_obj10.hdf5`][17]: motion local features (4.2GB).
 
 
 Training
@@ -112,3 +125,11 @@ Acknowledgements
  [7]: https://drive.google.com/file/d/1USUA5D9bN5Ar9rClfdhOUHiTYdX1di1P/view?usp=sharing
  [8]: https://drive.google.com/file/d/1jZLDt14ZRmfHEqc8Yat7beQA6n-N6-h7/view?usp=sharing
  [9]: https://drive.google.com/file/d/1bXGlOKWrqUlEOer2cRNIJ2654_H_2UeR/view?usp=sharing
+ [10]: https://drive.google.com/file/d/16UswbSjfhHBBUih-cGCZgvurNLq-gOKx/view?usp=sharing
+ [11]: https://drive.google.com/file/d/1KdsLDW3oE-xNtrzsoYKZv9N_hauOR1Of/view?usp=sharing
+ [12]: https://drive.google.com/file/d/1mX0oxSQXDS2h2Fxz091q6NdKuHihr0Fj/view?usp=sharing
+ [13]: https://drive.google.com/file/d/1wQERtue5TY3zEZJwX0u2t19ARhU4mhtY/view?usp=sharing
+ [14]: https://drive.google.com/file/d/1XtQNShBMbW3jNwuZPMYP9p-5QbpgtHF6/view?usp=sharing
+ [15]: https://drive.google.com/file/d/1efxWKIGxvmEV5nR9iJosTMOvpMzHwjlG/view?usp=sharing
+ [16]: https://drive.google.com/file/d/143miiDN3m9-QqptxtA6U6BJfSP8XOcoW/view?usp=sharing
+ [17]: https://drive.google.com/file/d/14DUT3_yazEFYqZRjzWgrZ6K3lYu0XfHm/view?usp=sharing
