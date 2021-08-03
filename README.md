@@ -98,12 +98,23 @@ Citation
 --------
 If this repository is helpful for your research, we'd really appreciate it if you could cite the following paper:
 ```text
-@article{seo2021attend,
-  title={Attend What You Need: Motion-Appearance Synergistic Networks for Video Question Answering},
-  author={Seo, Ahjeong and Kang, Gi-Cheon and Park, Joonhan and Zhang, Byoung-Tak},
-  journal={arXiv preprint arXiv:2106.10446},
-  year={2021}
+@inproceedings{seo-etal-2021-attend,
+    title = "Attend What You Need: Motion-Appearance Synergistic Networks for Video Question Answering",
+    author = "Seo, Ahjeong  and
+      Kang, Gi-Cheon  and
+      Park, Joonhan  and
+      Zhang, Byoung-Tak",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.481",
+    doi = "10.18653/v1/2021.acl-long.481",
+    pages = "6167--6177",
+    abstract = "Video Question Answering is a task which requires an AI agent to answer questions grounded in video. This task entails three key challenges: (1) understand the intention of various questions, (2) capturing various elements of the input video (e.g., object, action, causality), and (3) cross-modal grounding between language and vision information. We propose Motion-Appearance Synergistic Networks (MASN), which embed two cross-modal features grounded on motion and appearance information and selectively utilize them depending on the question{'}s intentions. MASN consists of a motion module, an appearance module, and a motion-appearance fusion module. The motion module computes the action-oriented cross-modal joint representations, while the appearance module focuses on the appearance aspect of the input video. Finally, the motion-appearance fusion module takes each output of the motion module and the appearance module as input, and performs question-guided fusion. As a result, MASN achieves new state-of-the-art performance on the TGIF-QA and MSVD-QA datasets. We also conduct qualitative analysis by visualizing the inference results of MASN.",
 }
+
 ```
 
 
@@ -116,7 +127,7 @@ Acknowledgements
  This work was partly supported by the Institute of Information & Communications Technology Planning & Evaluation (2015-0-00310-SW.StarLab/25%, 2017-0-01772-VTT/25%, 2018-0-00622-RMI/25%, 2019-0-01371-BabyMind/25%) grant funded by the Korean government.
  
  
- [1]: https://arxiv.org/abs/2106.10446
+ [1]: https://aclanthology.org/2021.acl-long.481/
  [2]: https://drive.google.com/file/d/1tWY3gU4XohzhZjV5Wia5L8XqfaV10127/view?usp=sharing
  [3]: https://drive.google.com/file/d/1rxLL6eqi3d9FXKq7e4Wx7jiisu7_gzJa/view?usp=sharing
  [4]: https://drive.google.com/file/d/1ejP_V3CuJFB_jaUYf-OM9up5bsnnETP3/view?usp=sharing
